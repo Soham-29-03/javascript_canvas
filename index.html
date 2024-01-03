@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CANVAS</h1>
+    <div id="canvas">
+
+    </div>
+</body>
+<script>
+    window.addEventListener("mousemove",function(e){
+        ele = document.createElement('p')
+        ele.style.width = '20px'
+        ele.style.height = '20px'
+        ele.style.borderRadius = '100px'
+        ele.style.backgroundColor = 'red'
+        ele.style.position = 'absolute'
+        ele.style.left = `${e.screenX}px`
+        ele.style.top = `${e.screenY}px`
+        document.getElementById("canvas").appendChild(ele)
+    })
+
+
+</script>
+</html>
